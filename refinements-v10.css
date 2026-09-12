@@ -1,0 +1,13 @@
+/* Website v10: approved portrait / enterprise-network hero. */
+.hero-v10{background:#071b30;padding-top:0;position:relative}
+.hero-v10 .hero-grid{position:relative;min-height:650px;grid-template-columns:1.1fr 1fr;gap:0}
+.hero-v10 .hero-copy{position:relative;z-index:2;padding:64px 0;max-width:660px}
+.hero-v10 h1{font-family:Georgia,'Times New Roman',serif;font-weight:500;font-size:clamp(2.8rem,4.5vw,4.6rem);line-height:1.08;letter-spacing:-.035em}
+.hero-v10 .portrait{position:absolute;inset:0 -8vw 0 40%;width:auto;max-width:none;margin:0;align-self:stretch;pointer-events:none}
+.hero-v10 .portrait img{height:100%;width:100%;object-fit:cover;object-position:62% 35%;border-radius:0;mask-image:linear-gradient(to right,transparent,#000 23%);-webkit-mask-image:linear-gradient(to right,transparent,#000 23%)}
+.hero-v10 .portrait:after{content:'';position:absolute;inset:0;background:linear-gradient(to right,#071b30 0%,transparent 40%)}
+.hero-v10 .portrait figcaption{left:37%;z-index:1;background:linear-gradient(transparent,#071b30);padding-bottom:24px}
+.hero-v10 .intro{max-width:560px}.hero-v10 .hero-copy>p:not(.eyebrow){max-width:540px}
+@media(max-width:1000px){.hero-v10 .hero-grid{display:block;min-height:600px}.hero-v10 .hero-copy{max-width:55%}.hero-v10 h1{font-size:3.1rem}.hero-v10 .portrait{left:35%;right:-12vw}.hero-v10 .intro{font-size:18px}}
+@media(max-width:760px){.hero-v10 .hero-grid{display:flex;flex-direction:column;min-height:0}.hero-v10 .hero-copy{max-width:100%;padding:40px 0 14px}.hero-v10 h1{font-size:clamp(2.5rem,8.5vw,3.8rem)}.hero-v10 .portrait{position:relative;inset:auto;width:calc(100% + 40px);height:390px;margin:0 -20px;max-width:none}.hero-v10 .portrait img{object-position:66% 30%;mask-image:none;-webkit-mask-image:none}.hero-v10 .portrait:after{background:linear-gradient(#071b30,transparent 18%)}.hero-v10 .portrait figcaption{left:0;text-align:center}.hero-v10 .hero-copy>p:not(.eyebrow){max-width:none}}
+@media(prefers-reduced-motion:no-preference){.hero-v10 .button{transition:background-color .18s ease,transform .18s ease}.hero-v10 .button:hover{transform:translateY(-2px)}}
