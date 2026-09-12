@@ -1,0 +1,7 @@
+/* Version 12: visible editorial imagery and connected service positioning. */
+.focus-v12{background:#f1f6fa;border-top:1px solid #dfE8f0;border-bottom:1px solid #dfe8f0}
+.focus-grid-v12{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:48px;align-items:center}
+.focus-grid-v12>img{display:block;width:100%;height:320px;object-fit:cover;border-radius:12px}
+.focus-grid-v12 h2{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.15;margin:12px 0 18px}
+.focus-grid-v12 .eyebrow{color:#245b7b;font-size:.82rem;letter-spacing:.08em}
+@media(max-width:760px){.focus-grid-v12{grid-template-columns:1fr;gap:24px}.focus-grid-v12>img{height:230px}.focus-v12{padding:40px 0}}

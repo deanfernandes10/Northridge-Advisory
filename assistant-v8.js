@@ -10,7 +10,7 @@
  ['Partner ecosystem','Explore the technology companies shown in Northridge’s partner ecosystem.','/partners.html','partners technology microsoft zoom dell genesys five9'],
  ['Insights','Read the insights published on the Northridge website.','/insights.html','insights articles resources'],
  ['Book a consultation','Choose an available time on Calendly. The booking page shows the meeting details before you confirm.',booking,'book booking meeting availability schedule appointment consultation'],
- ['Contact Dean','Use the inquiry form or email dean@northridgeadvisory.net. Phone and company are optional.','/#contact','contact email phone company inquiry'],
+ ['Contact Dean','Use the inquiry form or email contact@northridgeadvisory.net. Phone and company are optional.','/#contact','contact email phone company inquiry'],
  ['Pricing & engagement scope','Pricing and availability depend on the engagement. Send Dean your requirements to discuss scope and a quote.','/#contact','price cost pricing fees rates quote retainer payment'],
  ['Privacy','Read how information submitted through the site is used.','/privacy.html','privacy data personal information'],
  ['Home & overview','Start with the overview of Northridge Advisory and explore the site’s main sections.','/','home overview about navigate help']
