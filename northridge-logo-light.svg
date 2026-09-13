@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 700 430" role="img" aria-labelledby="title desc">
+<title id="title">NorthRidge Advisory</title><desc id="desc">Two mountain peaks above NorthRidge Advisory. Strategy, Technology, Growth.</desc>
+<g fill="#f3f5f7">
+<path d="M217 180 299 81 322 109 310 124 299 111 244 180Z"/>
+<path d="M269 180 365 56 461 180 433 180 365 92 297 180Z"/>
+<text x="350" y="266" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="62" font-weight="400" letter-spacing="3" textLength="540" lengthAdjust="spacingAndGlyphs">NORTHRIDGE</text>
+<text x="350" y="322" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="37" letter-spacing="12" textLength="350" lengthAdjust="spacingAndGlyphs">ADVISORY</text>
+<text x="350" y="388" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" letter-spacing="2" textLength="570" lengthAdjust="spacingAndGlyphs">STRATEGY | TECHNOLOGY | GROWTH</text>
+</g></svg>
