@@ -4,7 +4,7 @@
   'use strict';
   const reviewed='September 13, 2026';
   const contact=['Contact NorthRidge','/#contact'];
-  const book=['Book a 30-minute consultation','https://calendly.com/deanfernandes/30min'];
+  const book=['Book a conversation with Dean','https://calendly.com/deanfernandes'];
   const techPage='/ai-transformation.html';
   const sources={
     dex:['TechTarget: How DEX strategy drives productivity','https://www.techtarget.com/it-infrastructure/feature/How-digital-employee-experience-strategy-drives-productivity'],
@@ -105,7 +105,7 @@
     if(/^(all pages|site map|navigate|show.*pages)[?.! ]*$/i.test(q))return reply('pages','Choose a section of the website:',[['Home','/'],['Executive experience','/executive.html'],['Advisory','/leadership.html'],['AI, transformation and DEX',techPage],['Results','/results.html'],['Insights','/insights.html'],['Partners','/partners.html'],['Board opportunities','/board.html'],contact]);
     if(/^(technology topics|what (technology )?topics|what can you answer)[?.! ]*$/i.test(q))return reply('topics','I have reviewed explanations for DEX, Digital Workplace, agentic AI, RAG, AI governance, platform engineering, cloud, cybersecurity, Zero Trust and observability. Ask about one topic or compare two.',['dex','agents','cyber'].map(id=>{const e=entries.find(x=>x.id===id);return [e.title,e.url];}),['What is DEX?','What is agentic AI?','What is Zero Trust?']);
     if(/^(explore services|services|what (services )?do you (do|offer|provide)|what does northridge (do|offer)|how can (you|northridge) help( me| us)?|help me|not sure)[?.! ]*$/i.test(q))return reply('services','NorthRidge offers fractional and interim technology leadership, focused advisory, and AI/transformation support. Dean also welcomes full-time executive and board opportunities. Which need best describes yours?',[['Engagement options','/leadership.html'],contact],['Fractional leadership','AI transformation','Executive experience']);
-    if(/\b(book|schedule|reschedule|cancel)\b.*\b(meeting|call|consultation|appointment)\b|^book a meeting$|\bavailability\b/i.test(q))return reply('booking','The Calendly link shows available times for a 30-minute consultation and the location before confirmation. For an existing booking, use the reschedule or cancellation link in its confirmation email. I cannot book or change a meeting in this chat.',[book,contact]);
+    if(/\b(book|schedule|reschedule|cancel)\b.*\b(meeting|call|consultation|appointment)\b|^book a meeting$|\bavailability\b/i.test(q))return reply('booking','Open the booking calendar to choose a meeting type and available time, with your timezone shown before confirmation. For an existing booking, use the reschedule or cancellation link in its confirmation email. I cannot book or change a meeting in this chat.',[book,contact]);
     if(/^(contact( dean| northridge)?|email|phone|speak to (dean|a human)|talk to (dean|a human))[?.! ]*$|how (can|do) i (contact|reach)|business email/i.test(q))return reply('contact','Use contact@northridgeadvisory.net or the contact form. Share the business need and timing; do not include confidential records. I do not send messages on your behalf.',[contact,book]);
     let matches=entries.filter(e=>e.keys.test(q));
     const specificTech=matches.filter(e=>e.source&&e.id!=='ai');
@@ -146,3 +146,4 @@
   message('Welcome to NorthRidge. Ask about our services, public executive experience, or technology topics such as AI, DEX and cybersecurity. I use reviewed answers with sources—not live web searches.');chips(defaults);
   const navigation=document.querySelector('.navlinks');if(navigation&&!navigation.querySelector('a[href*="calendly.com"]')){const a=document.createElement('a');a.href=book[1];a.textContent='Book a consultation';a.target='_blank';a.rel='noopener noreferrer';navigation.append(a);}
 })();
+
